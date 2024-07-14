@@ -1,12 +1,17 @@
 import './assets/scss/all.scss';
+const baseUrl = 'https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product';
+const imageUrls = [];
+
+for (let i = 1; i <= 12; i++) {
+    imageUrls.push(`${baseUrl}${i}.jpg?raw=true`);
+}
 const data = [];
 
-// Generate 12 data entries
 for (let i = 0; i < 12; i++) {
     const item = {
         "id": i,
         "name": "Poppy & Barley",
-        "imgUrl": `https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/product1.jpg?raw=true`, 
+        "imgUrl": imageUrls[i % imageUrls.length], 
         "brand": "Jo Malone",
         "salePrice": 1380,
         "originalPrice": 1580
