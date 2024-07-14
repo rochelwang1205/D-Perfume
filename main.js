@@ -6,7 +6,7 @@ for (let i = 0; i < 12; i++) {
     const item = {
         "id": i,
         "name": "Poppy & Barley",
-        "imgUrl": `../assets/images/products${i + 1}.jpg`, 
+        "imgUrl": `./assets/images/products${i + 1}.jpg`, 
         "brand": "Jo Malone",
         "salePrice": 1380,
         "originalPrice": 1580
