@@ -1,5 +1,5 @@
 import './assets/scss/all.scss';
-const baseUrl = 'https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products';
+const baseUrl = 'https://github.com/rochelwang1205/D-Perfume/blob/main/assets/images/products';
 const imageUrls = [];
 
 for (let i = 1; i <= 12; i++) {
