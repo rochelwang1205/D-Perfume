@@ -1,0 +1,294 @@
+// landing page
+.landing-page{
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  .wrap{
+    max-width: 1078px;
+    margin: 0 auto;
+    padding: 295px 16px;
+    div{
+     margin-left: auto;
+     max-width: 445px; 
+    .index-title{
+      font-weight: bold;
+    }
+    .to-product{
+      width:100%;
+      text-align: center;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      padding: 4px 0;
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+      a{
+        color: #fff;
+        display: block;
+      }
+    }
+    }
+  }
+}
+// intro
+.intro{
+  max-width: 1078px;
+    margin: 0 auto;
+    padding: 60px 0;
+    @include padS{
+      padding: 40px 16px;
+      
+    }
+  .wrap-reverse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    @include laptopS{
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+    .chunk{
+      width: 50%;
+      @include laptopS{
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      img{
+        width: 555px;
+        height: auto; 
+        max-height: 555px;
+        object-fit: cover; 
+        object-position:0 14%;
+        vertical-align: middle;
+        @include laptopS{
+          width: 100%;
+          object-position:0 30%;
+        }
+      }
+    }
+    .item-wrap{
+      max-width: 50%;
+      margin: 0 auto;
+      @include laptopS{
+        max-width: 100%;
+        margin: 0 16px;
+      }
+      .item{
+        width: 350px;
+        @include laptopS{
+          width: 100%;
+        }
+        h3{
+          font-weight: bold;
+          @include laptopS{
+            margin-bottom: 8px;
+          }
+        }
+        a{
+          color: #AC8A46;
+          font-weight: bold;
+          &:hover{
+            color: #916019;
+          }
+        }
+      }
+      
+    }
+
+  }
+  .wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @include laptopS{
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+    .chunk{
+      width: 50%;
+      @include laptopS{
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      img{
+        width: 555px;
+        height: auto; 
+        max-height: 555px;
+        object-fit: cover; 
+        object-position:0 14%;
+        vertical-align: middle;
+        @include laptopS{
+          width: 100%;
+          object-position:0 30%;
+        }
+      }
+    }
+    .rec{
+      width: 50%;
+      @include laptopS{
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      img{
+        width: 555px;
+        height: 1080px;
+        object-fit: cover; 
+        object-position:0 14%;
+        vertical-align: middle;
+        @include laptopS{
+          width: 100%;
+          object-position:0 30%;
+          max: height 680px;
+        }
+      }
+    }
+    .item-wrap{
+      max-width: 50%;
+      @include laptopS{
+        max-width: 100%;
+        margin: 0 16px;
+      }
+      margin: 0 auto;
+      .item{
+        width: 350px;
+        @include laptopS{
+          width:100%;
+        }
+        h3{
+          font-weight: bold;
+          @include laptopS{
+            margin-bottom: 8px;
+          }
+        }
+
+        a{
+          color: #AC8A46;
+          font-weight: bold;
+          &:hover{
+            color: #916019;
+          }
+        }
+        .feature{
+          margin: 0 16px;
+          h4{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 4px;
+          }
+        }
+        .to-reserve{
+          margin: 8px 16px 0 16px;
+          display: block;
+          border: 2px solid #000;
+          border-radius: 30px;
+          color: #000;
+          text-align: center;
+          padding: 13px 0;
+          font-size: 20px;
+          &:hover{
+            background-color: #0000000D;
+            color: #000;
+          }
+        }
+      }
+      
+    }
+
+  }
+}
+// goods list
+.goods-list {
+  background-color: #E0E0E0;
+  padding: 40px 0;
+
+  .goods-items {
+    max-width: 1078px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    @include laptopS{
+      flex-direction: column;
+      gap: 16px;
+      margin: 0 16px;
+    }
+
+    li {
+      width: 31%; 
+      @include laptopS{
+        width: 100%;
+      }
+      .container {
+        .overlay{
+          position: relative;
+          width: 100%;
+          span{
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0; 
+            background-color: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 24px;
+          }
+        }
+        img {
+          width: 100%;
+          height: 540px;
+          object-fit: cover;
+          object-position: 0 70%;
+          vertical-align: middle;
+          @include laptopS{
+            height: 350px;
+          }
+        }
+      }
+      .content {
+        h3{
+          font-size: 24px;
+          font-weight: bold;
+        }
+        a{
+          color: #000;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+// goods feature
+.goods-feature{
+  max-width: 1078px;
+  margin: 0 auto;
+  padding: 60px 0;
+  gap:30px;
+  @include laptopS{
+    flex-direction: column;
+    margin: 0 16px;
+  }
+  .img-wrap{
+    max-width: 69%;
+    @include laptopS{
+      max-width: 100%;
+    }
+  }
+  .content{
+    max-width: 30%;
+    @include laptopS{
+      max-width: 100%;
+    }
+    h3{
+      font-weight: bold;
+    }
+    a{
+      color: #AC8A46;
+      font-weight: bold;
+      &:hover{
+        color: #916019;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@mixin laptopS{
+    @media(max-width:984px){
+      @content;
+    }
+  }
+// @mixin pad{
+//     @media(max-width:768px){
+//       @content;
+//     }
+//   }
+@mixin padS{
+    @media(max-width:624px){
+      @content;
+    }
+  }
+@mixin mobileS{
+    @media(min-width:624px){
+      @content;
+    }
+  }
+// @mixin mobile{
+//     @media(max-width:375px){
+//       @content;
+//     }
+//   }

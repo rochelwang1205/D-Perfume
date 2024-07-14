@@ -1,0 +1,43 @@
+.subscription{
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .container{
+        max-width: 1078px;
+        margin: 0 auto;
+        padding: 312px 16px 112px 16px;
+        .subscription__title{
+            margin-bottom: 20px;
+        }
+        .subscription__form form {
+            border: none;
+            outline: none;
+            display: flex;
+        }
+        .subscription__form form input {
+            border: 2px solid #916000;
+            border-radius: 4px 0 0 4px;
+            padding: 20px 57px 20px 16px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .subscription__form form input:focus {
+            outline: none; 
+            border-color: #916000; }
+        .subscription__form form .subscription__button {
+            border: 2px solid #916000;
+            background-color: #916000;
+            border-left-width: 0;
+            border-radius: 0 4px 4px 0;
+            color: white;
+            padding: 20px 24px;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        
+        .subscription__form form .subscription__button:hover {
+            background-color: #714e00;
+        }
+        }
+    }

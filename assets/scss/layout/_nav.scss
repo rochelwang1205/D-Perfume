@@ -1,0 +1,119 @@
+nav {
+  background-color: #fff;
+  max-width: 1078px;
+  margin: 0 auto;
+  padding: 16px;
+  
+  .desktop {
+    gap: 32px;
+    margin-left: auto;
+    a {
+      color: #8D8D8D;
+      &:hover {
+          color: #AC8A46;
+      }
+      span {
+          vertical-align: middle;
+          margin-right: 3px;
+      }
+  }
+}
+}
+  .mobile {
+      position: relative;
+      color: #707070;
+      vertical-align: middle;
+      &:hover{
+        color:#AC8A46 ;
+      }
+      
+      }
+.mobile-nav{
+    position: relative;
+}
+.cart{
+width: 20px;
+margin-right: 20px;
+    .item-num{
+        color: #fff;
+        background-color: #916000;
+        text-align: center;
+        line-height: 1.2;
+        font-size: 12px;
+        height: 13px;
+        width: 16px;
+        border-radius:  7px;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        z-index: 1;
+    }
+span{
+    color: #707070;
+    display: inline-block;
+    &:hover{
+        color:#AC8A46 ;
+    }
+}
+}
+
+  .hamburger-menu {
+      span {
+          display: block;
+          position: relative;
+          &::before,
+          &::after {
+              content: '';
+              position: absolute;
+          }
+      }
+  }
+
+  input#hamburger-menu {
+      display: none;
+  }
+
+  .menu-list {
+      cursor: pointer;
+      width: 0;
+      color: #fff;
+      background-color: #707070;
+      position: fixed;
+      top: 0;
+      left:0;
+      margin-top: 70px;
+      overflow: hidden;
+      ul {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+          li {
+              display: block;
+              padding: 16px 0;
+              &:hover{
+                  background-color: #AC8A46;
+              }
+          }
+          a {
+            color: #fff;
+          }
+      }
+  }
+
+  input#hamburger-menu:checked ~ .menu-list {
+      width: 100%;
+      height: fit-content;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-nav,.mobile {
+          display: none;
+      }
+  }
+
+  @media (max-width: 767px) {
+      .desktop {
+          display: none;
+      }
+  }
+
